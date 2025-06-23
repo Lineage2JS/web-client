@@ -6,12 +6,12 @@
 
         <div class="d-flex justify-content-between w-100">
           <div>
-            <b-nav pills>
+            <b-nav>
               <b-nav-item to="/" :active="this.$route.fullPath === '/'">Главная</b-nav-item>
             </b-nav>
           </div>
           <div>
-            <b-nav pills>
+            <b-nav>
               <b-nav-item to="/registration" :active="this.$route.fullPath === '/registration'">Регистрация</b-nav-item>
               <b-nav-item to="/login" :active="this.$route.fullPath === '/login'">Войти</b-nav-item>
             </b-nav>
