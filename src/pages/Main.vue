@@ -3,8 +3,8 @@
     <div class="d-flex align-items-center mt-5">
       <div>
         <h1>Enter the World of Lineage 2</h1>
-        <div class="mt-3">Experience the ultimate MMORPG adventure with enhanced graphics, balanced gameplay and an active community</div>
-        <div class="mt-3">
+        <div class="mt-4">Experience the ultimate MMORPG adventure with enhanced graphics, balanced gameplay and an active community</div>
+        <div class="mt-5">
           <b-button variant="primary" class="pt-2 pb-2 pr-4 pl-4 mr-3">
             <b-icon-download />
             <span class="ml-2">Download</span>
