@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Main from '@/pages/Main';
-import Registration from '@/pages/Registration';
-import Login from '@/pages/Login';
+import Register from '@/pages/Register';
+//import Login from '@/pages/Login';
 
 Vue.use(VueRouter);
 
@@ -14,14 +14,14 @@ export default new VueRouter({
       component: Main
     },
     {
-      name: 'registration',
-      path: '/registration/',
-      component: Registration
+      name: 'register',
+      path: '/register/',
+      component: Register
     },
-    {
-      name: 'login',
-      path: '/login/',
-      component: Login
-    }
+    // {
+    //   name: 'login',
+    //   path: '/login/',
+    //   component: Login
+    // }
   ]
 });

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-white" style="background-color: #23283a;">
     <b-container class="p-0">
       <div class="d-flex align-items-center vh-100">
         <div class="w-100">
@@ -10,6 +10,10 @@
               <label>Login</label>
               <b-input v-model="login" />
               <label class="mt-2">Password</label>
+              <b-input v-model="password" type="password" />
+              <label class="mt-2">Confirm password</label>
+              <b-input type="password" />
+              <label class="mt-2">Captcha</label>
               <b-input v-model="password" type="password" />
               <b-button class="mt-3" variant="primary" @click="registration">Регистрация</b-button>
             </b-col>
@@ -24,7 +28,7 @@
 import { Vue, Component } from 'vue-property-decorator';
 
 @Component({})
-export default class Registration extends Vue {
+export default class Register extends Vue {
   login = '';
   password = '';
 

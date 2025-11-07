@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-white" :style="{ backgroundImage: `linear-gradient(90deg, rgba(22, 25, 44, 0.8), rgba(47, 55, 75, 0.8)), url(${require('@/assets/main-bg.jpg')})`}">
+    <div class="text-white" style="background-size: cover;" :style="{ backgroundImage: `linear-gradient(90deg, rgba(22, 25, 44, 0.8), rgba(47, 55, 75, 0.8)), url(${require('@/assets/main-bg.jpg')})`}">
       <b-container class="p-0">
         <div class="d-flex align-items-center vh-100">
           <div>
@@ -24,8 +24,8 @@
             height: 400px;
             background-size: cover;
             background-position: 50%;
-            box-shadow: 2px 2px 10px black;
-            border-radius: 8px;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            border-radius: 0.375rem;
           "></div>
         </div>
       </b-container>

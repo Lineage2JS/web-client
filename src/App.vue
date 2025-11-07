@@ -12,8 +12,8 @@
           </div>
           <div>
             <b-nav>
-              <b-nav-item to="/registration" :active="this.$route.fullPath === '/registration'">Регистрация</b-nav-item>
-              <b-nav-item to="/login" :active="this.$route.fullPath === '/login'">Войти</b-nav-item>
+              <b-nav-item to="/register" :active="this.$route.fullPath === '/registration'">Регистрация</b-nav-item>
+              <!-- <b-nav-item to="/login" :active="this.$route.fullPath === '/login'">Войти</b-nav-item> -->
             </b-nav>
           </div>
         </div>
