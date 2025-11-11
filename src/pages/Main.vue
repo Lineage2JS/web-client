@@ -47,16 +47,24 @@
                 </div>
                 <div class="d-flex justify-content-between mt-2">
                   <div class="text-white-50">Login server</div>
-                  <div class="text-success font-weight-bold">
+                  <div v-if="isLoginServerOnline" class="text-success font-weight-bold">
                     <b-icon-circle-fill variant="success" />
                     <span class="ml-2">Online</span>
+                  </div>
+                  <div v-else class="text-danger font-weight-bold">
+                    <b-icon-circle-fill variant="danger" />
+                    <span class="ml-2">Offline</span>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between mt-2">
                   <div class="text-white-50">Game server</div>
-                  <div class="text-success font-weight-bold">
+                  <div v-if="isGameServerOnline" class="text-success font-weight-bold">
                     <b-icon-circle-fill variant="success" />
                     <span class="ml-2">Online</span>
+                  </div>
+                  <div v-else class="text-danger font-weight-bold">
+                    <b-icon-circle-fill variant="danger" />
+                    <span class="ml-2">Offline</span>
                   </div>
                 </div>
               </b-card>
@@ -165,6 +173,9 @@ import config from './../config'
 
 @Component({})
 export default class Main extends Vue {
+  isLoginServerOnline = false;
+  isGameServerOnline = false;
+
   get pageHeader() {
     return config.mainPageHeader;
   }
