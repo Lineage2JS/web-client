@@ -222,7 +222,7 @@ export default class Main extends Vue {
   }
 
   async checkLoginServer() {
-    const response = await fetch('http://localhost/status/login/');
+    const response = await fetch(`http://${location.host}/status/login/`);
     const payload = await response.json();
 
     if (payload.data === 'up') {
@@ -233,7 +233,7 @@ export default class Main extends Vue {
   }
 
   async checkGameServer() {
-    const response = await fetch('http://localhost/status/game/');
+    const response = await fetch(`http://${location.host}/status/game/`);
     const payload = await response.json();
 
     if (payload.data === 'up') {

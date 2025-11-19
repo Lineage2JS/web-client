@@ -47,7 +47,7 @@ export default class Register extends Vue {
   captcha = '';
 
   async createAccount() {
-    const response = await fetch('http://localhost/account', {
+    const response = await fetch(`http://${location.host}/account`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -77,7 +77,7 @@ export default class Register extends Vue {
   }
 
   async getCaptcha() {
-    const response = await fetch('http://localhost/captcha');
+    const response = await fetch(`http://${location.host}/captcha`);
     const payload = await response.json();
 
     this.captchaId = payload.data.captchaId;
